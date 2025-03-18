@@ -1,28 +1,32 @@
 import java.util.*;
- public class Coordenada{
+public class Coordenada{
     private double x;
     private double y;
     
     public Coordenada (){
+        this.x = 0;
+        this.y = 0;
 
     }
-    public Coordenada (doble x, doble y){
-
+    public Coordenada (double x, double y){
+        this.x = x;
+        this.y = y;
     }
     public Coordenada (Coordenada c){
-
+        this.x = c.getX();
+        this.y = c.getY();
     }
     void setX(double x){
-
+        this.x = x;
     }
     void setY(double y){
-
+        this.y = y;
     }
     double getX(){
-
+        return x;
     }
     double getY(){
-
+        return y; 
     }
     doble distancia(Coordenada c){
 
@@ -31,6 +35,5 @@ import java.util.*;
 
     }
     String toString(){
-        
-
+    }    
 }
