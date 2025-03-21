@@ -18,5 +18,3 @@ public class Main1 {
         p1.mostrarInfo();
     }
 }
-
-probando 

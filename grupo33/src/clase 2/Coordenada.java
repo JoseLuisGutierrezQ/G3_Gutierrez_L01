@@ -1,11 +1,12 @@
 import java.util.*;
+
 public class Coordenada{
     private double x;
     private double y;
     
     public Coordenada (){
         this.x = 0;
-        this.y = 0;
+        this.y = 0; 
 
     }
     public Coordenada (double x, double y){
@@ -28,12 +29,15 @@ public class Coordenada{
     double getY(){
         return y; 
     }
-    doble distancia(Coordenada c){
+    double distancia(Coordenada c){
+        return Math.sqrt(Math.pow(this.x - c.getX(), 2) + Math.pow(this.y - c.getY(), 2));
 
     }
     static double distancia(Coordenada c1, Coordenada c2){
-
-    }
-    String toString(){
+        return c1.distancia(c2);
+        
     }    
+    public String toString() {
+        return "(" + x + ", " + y + ")";
+    }
 }
